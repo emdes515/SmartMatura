@@ -5,7 +5,9 @@ export async function load({ locals }) {
 	if (!locals.user) redirect(302, '/login');
 
 	return {
-		user: locals.user
+		props: {
+			data: locals.user
+		}
 	};
 }
 
