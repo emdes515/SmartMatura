@@ -49,7 +49,7 @@
 </script>
 
 <div
-	class={`animate-in fade-in max-h-auto card m-5 w-full bg-base-200 p-5 shadow-2xl duration-500 sm:w-96`}
+	class={`max-h-auto card m-5 w-full bg-base-200 p-5 shadow-2xl duration-500 animate-in fade-in sm:w-96`}
 >
 	<form
 		action="?/login"
@@ -103,13 +103,13 @@
 			</div>
 		</div>
 
-		<div class="btn btn-primary w-full">
+		<button class="btn btn-primary w-full">
 			{#if isLoading}
 				<span class="loading loading-spinner loading-sm"></span>
 			{:else}
-				<input type="submit" class="w-full" value="Zaloguj się" />
+				Zaloguj się
 			{/if}
-		</div>
+		</button>
 
 		<button
 			on:click={() => (isLogin = !isLogin)}

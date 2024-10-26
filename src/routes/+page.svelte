@@ -1,5 +1,8 @@
 <h1>Dashboard</h1>
+<div class="bg- w-screen"></div>
 
 <form action="?/logout" method="post">
-	<button class="btn btn-error" type="submit">Wyloguj się</button>
+	<button>
+		Wyślij
+	</button>
 </form>
